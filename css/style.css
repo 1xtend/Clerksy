@@ -686,3 +686,56 @@ body.is-fixed {
     display: none;
   }
 }
+
+/*===============Scenes===============*/
+.scenes__body {
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 990.98px) {
+  .scenes__body {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 767.98px) {
+  .scenes__body {
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+}
+.scenes__content {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+}
+@media (max-width: 767.98px) {
+  .scenes__content {
+    flex: 0 1 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.scenes__title-box {
+  max-width: 379px;
+}
+@media (max-width: 767.98px) {
+  .scenes__title-box {
+    max-width: 600px;
+  }
+}
+.scenes__media {
+  flex: 0 1 50%;
+}
+@media (max-width: 767.98px) {
+  .scenes__media {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.scenes__media img {
+  max-width: 100%;
+}
