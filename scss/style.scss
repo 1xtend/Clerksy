@@ -113,8 +113,6 @@ body {
   &__title:not(:last-child) {
     margin-bottom: 27px;
   }
-  &__text {
-  }
 }
 
 /*===============Header===============*/
@@ -563,6 +561,39 @@ body {
 
     @media (max-width: 479.98px) {
       max-width: none;
+    }
+  }
+}
+
+/*===============Shapes===============*/
+
+.shapes {
+  background-color: var(--color-grey);
+
+  &__body {
+    padding: 120px 0 135px;
+
+    @media (max-width: 990.98px) {
+      padding-top: 90px 0 100px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 50px 0 60px;
+    }
+  }
+  &__content {
+    text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 479.98px) {
+      display: none;
     }
   }
 }

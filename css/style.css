@@ -197,6 +197,7 @@ body.is-fixed {
 .title-box__title:not(:last-child) {
   margin-bottom: 27px;
 }
+
 /*===============Header===============*/
 .header {
   position: absolute;
@@ -652,5 +653,36 @@ body.is-fixed {
 @media (max-width: 479.98px) {
   .item-production__text {
     max-width: none;
+  }
+}
+
+/*===============Shapes===============*/
+.shapes {
+  background-color: var(--color-grey);
+}
+.shapes__body {
+  padding: 120px 0 135px;
+}
+@media (max-width: 990.98px) {
+  .shapes__body {
+    padding-top: 90px 0 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .shapes__body {
+    padding: 50px 0 60px;
+  }
+}
+.shapes__content {
+  text-align: center;
+  max-width: 770px;
+  margin: 0 auto;
+}
+.shapes__image img {
+  max-width: 100%;
+}
+@media (max-width: 479.98px) {
+  .shapes__image {
+    display: none;
   }
 }
