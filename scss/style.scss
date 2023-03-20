@@ -1,4 +1,4 @@
-// Fonts
+/*===============Fonts===============*/
 
 @font-face {
   font-family: 'Recoleta';
@@ -23,11 +23,12 @@
   font-weight: 600;
 }
 
-// Imports
+/*===============Imports===============*/
+
 @import './nullstyle.scss';
 @import './config.scss';
 
-// Vars
+/*===============Vars===============*/
 
 :root {
   --color-light: #fbfaf7;
@@ -38,7 +39,7 @@
   --color-peach: #fab5a0;
 }
 
-// Global styles
+/*===============Global styles===============*/
 
 body {
   font-family: 'NotoSans', sans-serif;
@@ -109,14 +110,14 @@ body {
 }
 
 .title-box {
-  &__title {
+  &__title:not(:last-child) {
     margin-bottom: 27px;
   }
   &__text {
   }
 }
 
-// Header
+/*===============Header===============*/
 
 .header {
   position: absolute;
@@ -285,7 +286,7 @@ body {
   }
 }
 
-// Hero
+/*===============Hero===============*/
 
 .hero {
   background-color: var(--color-dark-green);
@@ -362,7 +363,7 @@ body {
   }
 }
 
-// Human
+/*===============Human===============*/
 
 .human {
   &__body {
@@ -413,7 +414,54 @@ body {
     max-width: 393px;
 
     @media (max-width: 767.98px) {
-      max-width: none;
+      max-width: 600px;
+    }
+  }
+}
+
+/*===============Sales===============*/
+
+.sales {
+  &__body {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
+  }
+  &__content {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+
+    @media (max-width: 767.98px) {
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+  }
+  &__title-box {
+    max-width: 393px;
+
+    @media (max-width: 767.98px) {
+      max-width: 600px;
+    }
+  }
+  &__media {
+    flex: 0 1 50%;
+    display: flex;
+
+    @media (max-width: 767.98px) {
+      flex: 0 1 100%;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 }

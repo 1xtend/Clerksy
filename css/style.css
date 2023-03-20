@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*===============Fonts===============*/
 @font-face {
   font-family: "Recoleta";
   src: url("../fonts/Recoleta/Recoleta-SemiBold.eot");
@@ -18,6 +19,7 @@
   font-style: normal;
   font-weight: 600;
 }
+/*===============Imports===============*/
 /*Обнуление*/
 * {
   padding: 0;
@@ -107,6 +109,7 @@ h6 {
 }
 
 /*-------------------*/
+/*===============Vars===============*/
 :root {
   --color-light: #fbfaf7;
   --color-grey: #f2efe6;
@@ -116,6 +119,7 @@ h6 {
   --color-peach: #fab5a0;
 }
 
+/*===============Global styles===============*/
 body {
   font-family: "NotoSans", sans-serif;
 }
@@ -190,9 +194,10 @@ body.is-fixed {
   }
 }
 
-.title-box__title {
+.title-box__title:not(:last-child) {
   margin-bottom: 27px;
 }
+/*===============Header===============*/
 .header {
   position: absolute;
   top: 0;
@@ -349,6 +354,7 @@ body.is-fixed {
   transition: bottom 0.2s ease 0.2s, transform 0.2s ease;
 }
 
+/*===============Hero===============*/
 .hero {
   background-color: var(--color-dark-green);
 }
@@ -435,6 +441,7 @@ body.is-fixed {
   max-width: 100%;
 }
 
+/*===============Human===============*/
 .human__body {
   display: flex;
   align-items: center;
@@ -489,6 +496,53 @@ body.is-fixed {
 }
 @media (max-width: 767.98px) {
   .human__title-box {
-    max-width: none;
+    max-width: 600px;
   }
+}
+
+/*===============Sales===============*/
+.sales__body {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .sales__body {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+}
+.sales__content {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+@media (max-width: 767.98px) {
+  .sales__content {
+    flex: 0 1 100%;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+}
+.sales__title-box {
+  max-width: 393px;
+}
+@media (max-width: 767.98px) {
+  .sales__title-box {
+    max-width: 600px;
+  }
+}
+.sales__media {
+  flex: 0 1 50%;
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .sales__media {
+    flex: 0 1 100%;
+    justify-content: center;
+  }
+}
+.sales__media img {
+  max-width: 100%;
 }
