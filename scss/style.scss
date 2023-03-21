@@ -290,22 +290,13 @@ body {
   background-color: var(--color-dark-green);
 
   &__body {
-    padding-top: 208px;
+    padding-top: 98px;
     position: relative;
     display: flex;
     align-items: center;
 
-    @media (max-width: 990.98px) {
-      padding-top: 168px;
-    }
-
     @media (max-width: 767.98px) {
       flex-wrap: wrap;
-      padding: 150px 0 0;
-    }
-
-    @media (max-width: 479.98px) {
-      padding-top: 130px;
     }
   }
   &__content {
