@@ -719,3 +719,106 @@ body {
     }
   }
 }
+
+/*===============Process===============*/
+
+.process {
+  background-color: var(--color-grey);
+
+  &__body {
+    padding: 120px 0;
+    text-align: center;
+
+    @media (max-width: 990.98px) {
+      padding: 90px 0;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 40px 0;
+    }
+  }
+  &__content {
+    margin-bottom: 60px;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.cols-process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46px;
+  gap: 20px;
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    flex: 0 1 33.333%;
+    position: relative;
+    text-align: center;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      padding-right: 100px;
+
+      @media (max-width: 990.98px) {
+        padding-right: 0;
+        max-width: 220px;
+        margin: 0 auto;
+      }
+    }
+
+    &:nth-child(3) {
+      max-width: 220px;
+      margin: 0 auto;
+    }
+
+    &:nth-child(1)::after,
+    &:nth-child(2)::after,
+    &:nth-child(3)::before {
+      content: '';
+      position: absolute;
+      width: 75px;
+      height: 35px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+
+      @media (max-width: 990.98px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(1)::after {
+      background: url('../images/process/process-arrow-1.svg') right no-repeat;
+    }
+    &:nth-child(2)::after {
+      background: url('../images/process/process-arrow-2.svg') right no-repeat;
+    }
+    &:nth-child(3)::before {
+      background: url('../images/process/process-vector.svg') center no-repeat;
+      width: 285px;
+      height: 180px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__text {
+    margin-bottom: 13px;
+    position: relative;
+    z-index: 2;
+  }
+  &__value {
+    font-family: 'Recoleta', sans-serif;
+    @include textProperties(28px, 32px, var(--color-dark-green));
+    position: relative;
+    z-index: 2;
+  }
+}

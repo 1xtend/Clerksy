@@ -809,3 +809,104 @@ body.is-fixed {
   background-color: var(--color-dark-green);
   border-radius: 50%;
 }
+
+/*===============Process===============*/
+.process {
+  background-color: var(--color-grey);
+}
+.process__body {
+  padding: 120px 0;
+  text-align: center;
+}
+@media (max-width: 990.98px) {
+  .process__body {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .process__body {
+    padding: 40px 0;
+  }
+}
+.process__content {
+  margin-bottom: 60px;
+}
+@media (max-width: 767.98px) {
+  .process__content {
+    margin-bottom: 40px;
+  }
+}
+
+.cols-process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46px;
+  gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .cols-process {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+}
+.cols-process__item {
+  flex: 0 1 33.333%;
+  position: relative;
+  text-align: center;
+}
+.cols-process__item:nth-child(1), .cols-process__item:nth-child(2) {
+  padding-right: 100px;
+}
+@media (max-width: 990.98px) {
+  .cols-process__item:nth-child(1), .cols-process__item:nth-child(2) {
+    padding-right: 0;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+.cols-process__item:nth-child(3) {
+  max-width: 220px;
+  margin: 0 auto;
+}
+.cols-process__item:nth-child(1)::after, .cols-process__item:nth-child(2)::after, .cols-process__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media (max-width: 990.98px) {
+  .cols-process__item:nth-child(1)::after, .cols-process__item:nth-child(2)::after, .cols-process__item:nth-child(3)::before {
+    display: none;
+  }
+}
+.cols-process__item:nth-child(1)::after {
+  background: url("../images/process/process-arrow-1.svg") right no-repeat;
+}
+.cols-process__item:nth-child(2)::after {
+  background: url("../images/process/process-arrow-2.svg") right no-repeat;
+}
+.cols-process__item:nth-child(3)::before {
+  background: url("../images/process/process-vector.svg") center no-repeat;
+  width: 285px;
+  height: 180px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cols-process__text {
+  margin-bottom: 13px;
+  position: relative;
+  z-index: 2;
+}
+.cols-process__value {
+  font-family: "Recoleta", sans-serif;
+  font-size: 1.75rem;
+  line-height: 114%;
+  color: var(--color-dark-green);
+  position: relative;
+  z-index: 2;
+}
