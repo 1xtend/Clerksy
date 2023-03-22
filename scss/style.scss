@@ -41,6 +41,10 @@
 
 /*===============Global styles===============*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'NotoSans', sans-serif;
 
@@ -951,7 +955,6 @@ body {
   }
   &__text {
     @include textProperties(14px, 21px, var(--color-dark-green));
-    font-weight: 400;
 
     a {
       color: var(--color-light-green);
@@ -992,6 +995,71 @@ body {
 
     @media (max-width: 479.98px) {
       position: relative;
+    }
+  }
+}
+
+/*===============Footer===============*/
+
+.footer {
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--color-grey);
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+
+    @media (max-width: 767.98px) {
+      padding: 20px 0;
+    }
+  }
+  &__bottom {
+    padding: 24px 0;
+    column-gap: 40px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-family: 'Recoleta', sans-serif;
+    @include textProperties(24px, 36px, var(--color-dark-green));
+  }
+  &__copy {
+    @include textProperties(14px, 21px, var(--color-dark-green));
+  }
+}
+
+.socials-footer {
+  display: flex;
+  gap: 14px;
+
+  &__link svg path {
+    fill: var(--color-light-green);
+    transition: fill 0.2s linear;
+  }
+
+  &__link:hover svg path {
+    fill: var(--color-dark-green);
+  }
+}
+
+.nav-footer {
+  &__list {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  &__link {
+    @include textProperties(14px, 19px, var(--color-light-green));
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

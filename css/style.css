@@ -120,6 +120,10 @@ h6 {
 }
 
 /*===============Global styles===============*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "NotoSans", sans-serif;
 }
@@ -1039,7 +1043,6 @@ body.is-fixed {
   font-size: 0.875rem;
   line-height: 150%;
   color: var(--color-dark-green);
-  font-weight: 400;
 }
 .sign-up__text a {
   color: var(--color-light-green);
@@ -1082,4 +1085,68 @@ body.is-fixed {
   .form-sign-up__btn {
     position: relative;
   }
+}
+
+/*===============Footer===============*/
+.footer__top, .footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__top {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--color-grey);
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 10px;
+}
+@media (max-width: 767.98px) {
+  .footer__top {
+    padding: 20px 0;
+  }
+}
+.footer__bottom {
+  padding: 24px 0;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+.footer__title {
+  font-family: "Recoleta", sans-serif;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--color-dark-green);
+}
+.footer__copy {
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: var(--color-dark-green);
+}
+
+.socials-footer {
+  display: flex;
+  gap: 14px;
+}
+.socials-footer__link svg path {
+  fill: var(--color-light-green);
+  transition: fill 0.2s linear;
+}
+.socials-footer__link:hover svg path {
+  fill: var(--color-dark-green);
+}
+
+.nav-footer__list {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.nav-footer__link {
+  font-size: 0.875rem;
+  line-height: 136%;
+  color: var(--color-light-green);
+}
+.nav-footer__link:hover {
+  text-decoration: underline;
 }
