@@ -159,6 +159,16 @@ body.is-fixed {
 .green-btn:active {
   background-color: #146f2b;
 }
+.green-btn_peach {
+  color: var(--color-dark-green);
+  background-color: var(--color-peach);
+}
+.green-btn_peach:hover {
+  background-color: #f78f70;
+}
+.green-btn_peach:active {
+  background-color: #f6764f;
+}
 
 .primary-title {
   font-family: "Recoleta", sans-serif;
@@ -959,4 +969,28 @@ body.is-fixed {
 }
 .resource__media img {
   max-width: 100%;
+}
+
+/*===============Get Started===============*/
+.get-started {
+  background: url("../images/get-started/get-started-left.svg") bottom left no-repeat, url("../images/get-started/get-started-right.svg") bottom right no-repeat, var(--color-dark-green);
+}
+@media (max-width: 767.98px) {
+  .get-started {
+    background: var(--color-dark-green);
+  }
+}
+.get-started__body {
+  text-align: center;
+  padding: 114px 124px;
+}
+@media (max-width: 990.98px) {
+  .get-started__body {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .get-started__body {
+    padding: 40px 0;
+  }
 }

@@ -79,6 +79,18 @@ body {
   &:active {
     background-color: #146f2b;
   }
+
+  &_peach {
+    color: var(--color-dark-green);
+    background-color: var(--color-peach);
+
+    &:hover {
+      background-color: #f78f70;
+    }
+    &:active {
+      background-color: #f6764f;
+    }
+  }
 }
 
 .primary-title {
@@ -869,6 +881,31 @@ body {
 
     img {
       max-width: 100%;
+    }
+  }
+}
+
+/*===============Get Started===============*/
+
+.get-started {
+  background: url('../images/get-started/get-started-left.svg') bottom left no-repeat,
+    url('../images/get-started/get-started-right.svg') bottom right no-repeat,
+    var(--color-dark-green);
+
+  @media (max-width: 767.98px) {
+    background: var(--color-dark-green);
+  }
+
+  &__body {
+    text-align: center;
+    padding: 114px 124px;
+
+    @media (max-width: 990.98px) {
+      padding: 90px 0;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 40px 0;
     }
   }
 }
