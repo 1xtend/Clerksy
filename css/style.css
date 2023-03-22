@@ -272,9 +272,7 @@ body.is-fixed {
     width: 250px;
     flex-direction: column;
     padding: 120px 20px 30px 30px;
-    background-color: #f1673c;
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    background-color: #1e434c;
     align-items: flex-start;
     z-index: 3;
     transform: translateX(100%);
@@ -672,7 +670,7 @@ body.is-fixed {
 }
 @media (max-width: 990.98px) {
   .shapes__body {
-    padding-top: 90px 0 100px;
+    padding: 90px 0 100px;
   }
 }
 @media (max-width: 767.98px) {
