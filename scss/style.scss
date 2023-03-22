@@ -91,6 +91,10 @@ body {
       background-color: #f6764f;
     }
   }
+
+  &_br {
+    border-radius: 255px;
+  }
 }
 
 .primary-title {
@@ -862,6 +866,7 @@ body {
 
     @media (max-width: 767.98px) {
       flex: 0 1 100%;
+      padding-right: 0;
     }
   }
   &__title-box {
@@ -906,6 +911,87 @@ body {
 
     @media (max-width: 767.98px) {
       padding: 40px 0;
+    }
+  }
+}
+
+/*===============Sign Up===============*/
+
+.sign-up {
+  background-color: var(--color-grey);
+
+  &__body {
+    display: flex;
+    padding: 55px 0;
+    align-items: center;
+
+    @media (max-width: 767.98px) {
+      padding: 40px 0;
+      flex-wrap: wrap;
+    }
+  }
+  &__content {
+    flex: 0 1 50%;
+    padding-right: 20px;
+
+    @media (max-width: 767.98px) {
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  &__action {
+    flex: 0 1 50%;
+
+    @media (max-width: 767.98px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__form:not(:last-child) {
+    margin-bottom: 11px;
+  }
+  &__text {
+    @include textProperties(14px, 21px, var(--color-dark-green));
+    font-weight: 400;
+
+    a {
+      color: var(--color-light-green);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.form-sign-up {
+  display: flex;
+  position: relative;
+
+  @media (max-width: 479.98px) {
+    flex-direction: column;
+  }
+
+  &__email {
+    flex: 1 1 100%;
+    padding: 5px 120px 5px 20px;
+    border-radius: 255px;
+    min-height: 54px;
+
+    @include textProperties(18px, 20px, var(--color-dark-green));
+
+    @media (max-width: 479.98px) {
+      padding: 5px 20px;
+      margin-bottom: 8px;
+      font-size: rem(16px);
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+
+    @media (max-width: 479.98px) {
+      position: relative;
     }
   }
 }

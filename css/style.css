@@ -169,6 +169,9 @@ body.is-fixed {
 .green-btn_peach:active {
   background-color: #f6764f;
 }
+.green-btn_br {
+  border-radius: 255px;
+}
 
 .primary-title {
   font-family: "Recoleta", sans-serif;
@@ -948,6 +951,7 @@ body.is-fixed {
 @media (max-width: 767.98px) {
   .resource__content {
     flex: 0 1 100%;
+    padding-right: 0;
   }
 }
 .resource__title-box {
@@ -992,5 +996,90 @@ body.is-fixed {
 @media (max-width: 767.98px) {
   .get-started__body {
     padding: 40px 0;
+  }
+}
+
+/*===============Sign Up===============*/
+.sign-up {
+  background-color: var(--color-grey);
+}
+.sign-up__body {
+  display: flex;
+  padding: 55px 0;
+  align-items: center;
+}
+@media (max-width: 767.98px) {
+  .sign-up__body {
+    padding: 40px 0;
+    flex-wrap: wrap;
+  }
+}
+.sign-up__content {
+  flex: 0 1 50%;
+  padding-right: 20px;
+}
+@media (max-width: 767.98px) {
+  .sign-up__content {
+    flex: 0 1 100%;
+    margin-bottom: 20px;
+  }
+}
+.sign-up__action {
+  flex: 0 1 50%;
+}
+@media (max-width: 767.98px) {
+  .sign-up__action {
+    flex: 0 1 100%;
+  }
+}
+.sign-up__form:not(:last-child) {
+  margin-bottom: 11px;
+}
+.sign-up__text {
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: var(--color-dark-green);
+  font-weight: 400;
+}
+.sign-up__text a {
+  color: var(--color-light-green);
+}
+.sign-up__text a:hover {
+  text-decoration: underline;
+}
+
+.form-sign-up {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 479.98px) {
+  .form-sign-up {
+    flex-direction: column;
+  }
+}
+.form-sign-up__email {
+  flex: 1 1 100%;
+  padding: 5px 120px 5px 20px;
+  border-radius: 255px;
+  min-height: 54px;
+  font-size: 1.125rem;
+  line-height: 111%;
+  color: var(--color-dark-green);
+}
+@media (max-width: 479.98px) {
+  .form-sign-up__email {
+    padding: 5px 20px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+}
+.form-sign-up__btn {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+@media (max-width: 479.98px) {
+  .form-sign-up__btn {
+    position: relative;
   }
 }
