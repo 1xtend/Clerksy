@@ -1,2 +1,2 @@
 # Clerksy
-Link on github pages - https://1xtend.github.io/Clerksy/
+Website link - https://1xtend.github.io/Clerksy/
